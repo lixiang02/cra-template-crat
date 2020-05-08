@@ -1,10 +1,8 @@
 const {
   override,
-  prodDefaultConfig,
-  devDefaultConfig
+  defaultConfig
 } = require("mcf-cra")
 
 module.exports = override(
-  prodDefaultConfig(),
-  devDefaultConfig()
+  defaultConfig()
 )
