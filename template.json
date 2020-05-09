@@ -56,7 +56,6 @@
         "test": "react-scripts test",
         "test-cov": "react-scripts test --watchAll=false --coverage",
         "eject": "react-scripts eject",
-        "prebuild": "yarn test",
         "prepublishOnly": "yarn build",
         "electron": "set ELECTRON_ENABLE_LOGGING=true && electron client.js --debug &",
         "package": "node_modules/.bin/electron-packager build application  --electronVersion=1.7.5 --platform=darwin   --out=releases  --overwrite ",

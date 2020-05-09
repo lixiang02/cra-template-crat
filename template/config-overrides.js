@@ -1,8 +1,10 @@
 const {
   override,
-  defaultConfig
+  customBuildConfig,
+  customEntryConfig
 } = require("mcf-cra")
 
 module.exports = override(
-  defaultConfig()
+  customBuildConfig(),
+  customEntryConfig()
 )
