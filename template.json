@@ -33,6 +33,7 @@
             "react-intl": "3.3.0"
         },
         "module": "dist/cjs/index.js",
+        "main": "dist/cjs/index.js",
         "eslintConfig": {
             "extends": "react-app",
             "globals": {
@@ -40,8 +41,8 @@
             }
         },
         "config": {
-            "API_SERVER": "/soc",
-            "MOCK_SERVER": "http://192.168.200.178:3000/mock/60"
+            "API_SERVER": "/",
+            "MOCK_SERVER": "/mock"
         },
         "files": [
             "dist",
