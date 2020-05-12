@@ -77,7 +77,6 @@
         "test": "react-app-rewired test",
         "coverage": "CI=true react-scripts test --coverage",
         "eject": "react-scripts eject",
-        "prebuild": "yarn test",
         "prepublishOnly": "yarn build",
         "electron": "set ELECTRON_ENABLE_LOGGING=true && electron client.js --debug &",
         "package": "node_modules/.bin/electron-packager build abc-ts  --electronVersion=1.7.5 --platform=darwin   --out=releases  --overwrite ",
