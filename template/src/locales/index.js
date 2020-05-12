@@ -1,18 +1,23 @@
-import {defineMessages} from 'react-intl';
+// import {defineMessages} from 'react-intl';
+function defineMessages(locale){
+    return locale
+}
 
 export default defineMessages({
   'title': {
-      id: '{@namespace@}.title',
-      defaultMessage: '{@namespace@}.title',
+      id: 'abc-ts.title',
+      defaultMessage: 'abc-ts.title',
   },
   'delete.confirm': {
-      id: '{@namespace@}.buttons.delete.confirm',
-      defaultMessage: '{@namespace@}.buttons.delete.confirm',
+      id: 'abc-ts.buttons.delete.confirm',
+      defaultMessage: 'abc-ts.buttons.delete.confirm',
   },
-  {@#columns@}
-  '{@name@}.label': {
-      id: '{@namespace@}.field.{@name@}.label',
-      defaultMessage: '{@name@}',
+  'name.label': {
+      id: 'abc-ts.field.name.label',
+      defaultMessage: 'name',
   },
-  {@/columns@}
+  'title.label': {
+      id: 'abc-ts.field.title.label',
+      defaultMessage: 'title',
+  },
 });

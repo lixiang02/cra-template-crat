@@ -1,29 +1,4 @@
-[![pipeline status](http://git.mchz.com.cn/{@namespace@}/badges/master/pipeline.svg)](http://git.mchz.com.cn/mcf/capaa/{@namespace@}/commits/master)
-[![coverage report](http://git.mchz.com.cn/{@namespace@}/badges/master/coverage.svg)](http://git.mchz.com.cn/mcf/capaa/{@namespace@}/commits/master)
-
-# {@namespace@} 模块名称
-
-{@namespace@} 模块的描述
-
-## 项目需要自行安装依赖包
-
-使用命令：
-```js
-yarn install / npm install 
-```
-
-## 项目需要自行配置git的repository
-
-修改 `package.json` 中的 `repository` 属性为项目的gitlab项目地址 
-
-## 项目需要自行配置项目的 `pipeline.svg` 和 `coverage.svg`的图片地址
-
-修改 `README.md` 中文件顶部的图片地址为自己项目的图片地址 
- 
-## Changelog
-
-- 0.1.0 初如化版本
-
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
@@ -51,3 +26,19 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).

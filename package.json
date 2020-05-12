@@ -1,6 +1,6 @@
 {
-  "name": "cra-template-crat",
-  "version": "0.0.4",
+  "name": "cra-template-demo-ts",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,5 +16,5 @@
     "package.json",
     "template.json"
   ],
-  "patchVersionList": ["0.0.1"]
+  "patchVersionList": []
 }
