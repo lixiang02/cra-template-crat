@@ -1,7 +1,8 @@
 const {
   override,
   customBuildConfig,
-  customEntryConfig
+  customEntryConfig,
+  fixBabelImports
 } = require("mcf-cra")
 
 const treeShaking = () => config => {
