@@ -2,8 +2,11 @@ const {
   override,
   customBuildConfig,
   customEntryConfig,
-  fixBabelImports
+  fixBabelImports,
+  addWebpackAlias
 } = require("mcf-cra")
+const path = require('path')
+const paths = require('react-scripts/config/paths')
 
 const treeShaking = () => config => {
   const isProdMode = process.env.NODE_ENV === 'production'
@@ -25,5 +28,9 @@ const treeShaking = () => config => {
 module.exports = override(
   customBuildConfig(),
   customEntryConfig(),
-  treeShaking()
+  treeShaking(),
+  addWebpackAlias({
+    'mcf-module': path.join(paths.appNodeModules, 'mcf-module'),
+    'react-intl': path.join(paths.appNodeModules, 'react-intl')  
+  })
 )
