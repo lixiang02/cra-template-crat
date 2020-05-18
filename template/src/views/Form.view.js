@@ -19,7 +19,7 @@ export default class FormView extends FormPage{
 		this.goBack()
 	}
 	render(){
-		const {item,actions,locale,spins}= this.props
+		const {item,actions,spins}= this.props
 		const saveSpin = spins(actions.fetchSave)
 		const itemSpin = spins(actions.fetchItem)
 		return (
