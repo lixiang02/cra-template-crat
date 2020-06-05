@@ -4,7 +4,7 @@ const {
   customEntryConfig,
   fixBabelImports,
   addWebpackAlias
-} = require("mcf-cra")
+} = require("@mcf/cra")
 const path = require('path')
 const paths = require('react-scripts/config/paths')
 
