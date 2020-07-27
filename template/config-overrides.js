@@ -1,10 +1,13 @@
 const {
   override,
+  overrideDevServer,
   customBuildConfig,
   customEntryConfig,
+  customBabelLoaderInclude,
+  customProxyConfig,
   fixBabelImports,
   addWebpackAlias
-} = require("@mcf/cra")
+} = require("@mcfed/cra")
 const path = require('path')
 const paths = require('react-scripts/config/paths')
 
@@ -25,12 +28,24 @@ const treeShaking = () => config => {
   return config
 }
 
-module.exports = override(
-  customBuildConfig(),
-  customEntryConfig(),
-  treeShaking(),
-  addWebpackAlias({
-    'mcf-module': path.join(paths.appNodeModules, 'mcf-module'),
-    'react-intl': path.join(paths.appNodeModules, 'react-intl')  
-  })
-)
+module.exports = 
+
+module.exports = {
+  webpack: override(
+    customBuildConfig(),
+    customEntryConfig(),
+    treeShaking(),
+    addWebpackAlias({
+      'mcf-module': path.join(paths.appNodeModules, 'mcf-module'),
+      'react-intl': path.join(paths.appNodeModules, 'react-intl')  
+    }),
+    customBabelLoaderInclude([path.resolve(__dirname, './app')])
+  ),
+  devServer: overrideDevServer(
+    customProxyConfig({
+      [process.env.npm_package_config_API_SERVER]: {
+        target: process.env.npm_package_config_MOCK_SERVER
+      }
+    })
+  )
+};

@@ -90,7 +90,7 @@ export default class ListView extends ListPage {
         key: "options",
         dataIndex: "options",
         width: 190,
-        render: this.renderTableButtonGroups 
+        render: this.renderTableButtonGroups.bind(this)
       }]
     }
     

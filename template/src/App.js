@@ -22,7 +22,7 @@ const App = () => (
     </IntlProvider>
   </Provider>
 );
-
+global.API_PREFIX = '/soc'
 const render = Component => {
   ReactDOM.render(
     <AppContainer>
